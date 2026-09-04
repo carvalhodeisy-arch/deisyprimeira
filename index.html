@@ -149,9 +149,19 @@
             o fermento e os morangos picados. Coloque a massa em uma
             forma untada e leve ao forno até o bolo ficar dourado.
         </p>
-        <button>❤️</button>
+        <button>❤️ <span>0</span></button>
 
     </main>
 
 </body>
+<script>
+    const botão = document.querySelector("button");
+    botão.addEventListener("click", botãoClicado);
+
+    function botãoClicado(){
+        console.log("fui clicado");
+        let texto = botão.querySelector("span");
+        texto.textContent++;
+    }
+</script>
 </html>
